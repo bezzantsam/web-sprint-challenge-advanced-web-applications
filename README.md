@@ -1,7 +1,7 @@
 # Sprint Challenge: Advanced Web Applications
 
 In this challenge, you will write the logic for [THIS APP](https://advanced-apps-articles.herokuapp.com/).
-
+x
 ## Tools
 
 - Node 16.x
