@@ -20,9 +20,9 @@ if (!window.localStorage.getItem('token')) {
     <div className="articles">
       <h2>Articles</h2>
       {
-        ![].length
+        !articles.length
           ? 'No articles yet'
-          : [].map(art => {
+          : articles.map(art => {
             return (
               <div className="article" key={art.article_id}>
                 <div>
@@ -31,8 +31,8 @@ if (!window.localStorage.getItem('token')) {
                   <p>Topic: {art.topic}</p>
                 </div>
                 <div>
-                  <button disabled={true} onClick={Function.prototype}>Edit</button>
-                  <button disabled={true} onClick={Function.prototype}>Delete</button>
+                  <button disabled={true} onClick={evt => setCurrentArticleId(art)}>Edit</button>
+                  <button disabled={true} onClick={evt => deleteArticle(art.article_id)}>Delete</button>
                 </div>
               </div>
             )
