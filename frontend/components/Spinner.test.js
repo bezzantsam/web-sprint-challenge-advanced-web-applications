@@ -6,7 +6,7 @@ import Spinner from './Spinner'
 
 test ('Spinner renders when prop is truthy', () => { 
   render ( <Spinner on = {true}/>)
-  const message = screen.getByText('Loading')
+  const message = screen.getByText('Please wait...')
   expect(message).toBeInTheDocument}
 )
 test('Spinner does not render when prop is false', () =>
